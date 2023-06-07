@@ -9,7 +9,7 @@ const NavigationMenu = () => {
           <Link href="/home">
             <a
               href=""
-              className="font-thin text-xl tracking-wider hover:text-white"
+              className="font-thin text-xl tracking-wider hover:text-stone-400"
             >
               Gift'n Giving
             </a>
@@ -19,21 +19,30 @@ const NavigationMenu = () => {
             <ul className="flex text-stone-700 font-thin">
               <li className="">
                 <Link href="/home">
-                  <a href="" className="mr-14 hover:text-zinc-400">
+                  <a
+                    href=""
+                    className="mr-14 hover:text-zinc-400 delay-75 duration-200"
+                  >
                     home
                   </a>
                 </Link>
               </li>
               <li className="">
                 <Link href="/about">
-                  <a href="" className="mr-14 hover:text-zinc-400">
+                  <a
+                    href=""
+                    className="mr-14 hover:text-zinc-400 delay-75 duration-200"
+                  >
                     about
                   </a>
                 </Link>
               </li>
               <li className="">
                 <Link href="/blog">
-                  <a href="" className="hover:text-zinc-400">
+                  <a
+                    href=""
+                    className="hover:text-zinc-400 delay-75 duration-200"
+                  >
                     blog
                   </a>
                 </Link>
@@ -45,7 +54,7 @@ const NavigationMenu = () => {
             <Link href="/contact">
               <a
                 href="#"
-                className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-stone-600 mt-4 lg:mt-0"
+                className="inline-block text-sm px-4 py-2 leading-none border rounded text-stone-600 border-stone-400 hover:border-transparent hover:bg-stone-600 hover:text-white mt-4 lg:mt-0 duration-500 delay-100"
               >
                 Contact
               </a>
