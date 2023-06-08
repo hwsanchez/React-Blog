@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route } from "wouter";
 import NavigationMenu from "./components/NavigationMenu";
 import HomePage from "./components/HomePage";
@@ -6,6 +5,7 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import BlogPage from "./components/BlogPage";
 import FooterSection from "./components/FooterSection";
+import "./App.css";
 
 function App() {
   return (

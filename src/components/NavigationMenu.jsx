@@ -56,7 +56,7 @@ const NavigationMenu = () => {
                 href="#"
                 className="inline-block text-sm px-4 py-2 leading-none border rounded text-stone-600 border-stone-400 hover:border-transparent hover:bg-stone-600 hover:text-white mt-4 lg:mt-0 duration-500 delay-100"
               >
-                Contact
+                subscribe
               </a>
             </Link>
           </div>
