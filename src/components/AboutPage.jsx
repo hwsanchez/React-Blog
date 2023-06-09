@@ -1,23 +1,11 @@
 import AboutImage from "../assets/images/sanchez_final-95.jpg";
 
 const AboutPage = () => {
-  const picstyle = {
-    maxWidth: "100%",
-    height: "auto"
-  };
-
-  const piccontainerstyle = {
-    display: "inline-block",
-    maxHeight: "400px",
-    maxWidth: "400px",
-
-
-
-  };
+  
 
   const maincontainerstyle = {
-    margin: "5% 5%",
-    minHeight: "500px",
+    margin: "5% 5%"
+    // minHeight: "500px"
   };
 
   const lineColor = {
@@ -27,15 +15,15 @@ const AboutPage = () => {
   return (
     <>
       <div style={maincontainerstyle}>
-        <div className="flex">
-          <div style={piccontainerstyle}>
-            <img style={picstyle} src={AboutImage} alt="Debbie" />
+        <div className="block sm:flex up-container">
+          <div  className="mx-auto sm:mx-0 max-w-md">
+            <img  src={AboutImage} alt="Debbie" className="w-full h-auto ml-auto mr-auto" />
           </div>
-          <div className="pl-5">
-            <div className="pb-5 font-serif text-neutral-400 text-3xl tracking-wider font-thin">
-              Creativity and Ideas to share
+          <div className="block pl-8 right-container">
+            <div className="big-text-container pt-5 pb-5 font-serif text-neutral-400 text-3xl tracking-wider font-thin">
+              Creativity and Inspiration to share...
             </div>
-            <div className="font-sans text-zinc-500">
+            <div className="about-text-container font-sans text-zinc-500">
               <p>
                 Hi, I’m Debbie! Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Repudiandae architecto sed nostrum tenetur
@@ -57,6 +45,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+        {/* <div style={redColor}>
+          
+        </div> */}
       </div>
     </>
   );

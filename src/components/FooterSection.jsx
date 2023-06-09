@@ -9,13 +9,13 @@ const FooterSection = () => {
             <i className="mr-6 fa-regular fa-envelope hover:text-black hover:scale-125 duration-150"></i>
           </a>
           <a href="https://www.instagram.com/theginghouse/" target="_blank">
-            <i class="mr-6 fa-brands fa-instagram hover:text-black hover:scale-125 duration-150"></i>
+            <i className="mr-6 fa-brands fa-instagram hover:text-black hover:scale-125 duration-150"></i>
           </a>
           <a href="https://www.facebook.com/theginghouse" target="_blank">
             <i className="mr-6 fa-brands fa-facebook-f hover:text-black hover:scale-125 duration-150"></i>
           </a>
           <a href="https://www.pinterest.com/" target="blank">
-            <i class="fa-brands fa-pinterest hover:text-black hover:scale-125 duration-150"></i>
+            <i className="fa-brands fa-pinterest hover:text-black hover:scale-125 duration-150"></i>
           </a>
         </div>
         <div className="footer-right">

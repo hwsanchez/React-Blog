@@ -17,7 +17,7 @@ const NavigationMenu = () => {
 
           <nav className={""}>
             <ul className="flex text-stone-700 font-thin">
-              <li className="">
+              <li className="hover:underline underline-offset-4">
                 <Link href="/home">
                   <a
                     href=""
@@ -27,7 +27,7 @@ const NavigationMenu = () => {
                   </a>
                 </Link>
               </li>
-              <li className="">
+              <li className="hover:underline underline-offset-4">
                 <Link href="/about">
                   <a
                     href=""
@@ -37,7 +37,7 @@ const NavigationMenu = () => {
                   </a>
                 </Link>
               </li>
-              <li className="">
+              <li className="hover:underline underline-offset-4">
                 <Link href="/blog">
                   <a
                     href=""

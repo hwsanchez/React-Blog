@@ -1,0 +1,24 @@
+[
+  {
+  "id": 1,
+  "blogTitle": "Beauty in Simplicity",
+  "category": "Lifestyle",
+  "author": "Debbie Sanchez",
+  "date": "07/30/2022",
+  "location": "Hamburg",
+  "image1": "./images/blog/beauty_in_simplicity/bis1.jpeg",
+  "image2": "./images/blog/beauty_in_simplicity/bis2.jpeg",
+  "image3": "./images/blog/beauty_in_simplicity/bis3.jpeg"
+},
+{
+  "id": 2,
+  "blogTitle": "Perfect Work Station for your Teen",
+  "category": "Home Decor",
+  "author": "Debbie Sanchez",
+  "date": "10/17/2022",
+  "location": "Hamburg",
+  "image1": "./images/blog/star_wars_room/swr1.jpeg",
+  "image2": "./images/blog/star_wars_room/swr2.jpeg",
+  "image3": "./images/blog/star_wars_room/swr3.jpeg"
+}
+]
