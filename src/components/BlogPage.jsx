@@ -1,4 +1,4 @@
-import Map from "react-map-gl";
+// import Map from "react-map-gl";
 
 const BlogPage = () => {
   return (
@@ -7,7 +7,7 @@ const BlogPage = () => {
       <br />
       <br />
       {/* Mapbox Test! */}
-      <Map
+      {/* <Map
         initialViewState={{
           longitude: -122.4,
           latitude: 37.8,
@@ -16,7 +16,8 @@ const BlogPage = () => {
         style={{ width: 600, height: 400 }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
-      />
+      /> */}
+      
     </>
   );
 };

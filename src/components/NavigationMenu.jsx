@@ -4,7 +4,7 @@ const NavigationMenu = () => {
   return (
     <>
       <header>
-        <div className="header-inner flex items-center justify-between flex-wrap bg-zinc-100 p-6">
+        <div className="header-inner block sm:flex items-center justify-between flex-wrap bg-zinc-100 p-6">
           {/* Logo */}
           <Link href="/home">
             <a
@@ -16,8 +16,8 @@ const NavigationMenu = () => {
           </Link>
 
           <nav className={""}>
-            <ul className="flex text-stone-700 font-thin">
-              <li className="hover:underline underline-offset-4">
+            <ul className="block mt-5 sm:mt-0 sm:flex text-stone-700 font-thin">
+              <li className="hover:underline underline-offset-4 pb-3 sm:pb-0 ">
                 <Link href="/home">
                   <a
                     href=""
@@ -27,7 +27,7 @@ const NavigationMenu = () => {
                   </a>
                 </Link>
               </li>
-              <li className="hover:underline underline-offset-4">
+              <li className="hover:underline underline-offset-4 pb-3 sm:pb-0">
                 <Link href="/about">
                   <a
                     href=""
@@ -54,7 +54,7 @@ const NavigationMenu = () => {
             <Link href="/contact">
               <a
                 href="#"
-                className="inline-block text-sm px-4 py-2 leading-none border rounded text-stone-600 border-stone-400 hover:border-transparent hover:bg-stone-600 hover:text-white mt-4 lg:mt-0 duration-500 delay-100"
+                className="inline-block text-sm px-4 py-2 leading-none border rounded text-stone-600 border-stone-400 hover:border-transparent hover:bg-stone-600 hover:text-white mt-4 sm:mt-0 duration-500 delay-100"
               >
                 subscribe
               </a>

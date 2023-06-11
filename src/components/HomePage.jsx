@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="home-main-wrapper">
         <div className="hero-image">
           <img src={familyPics} alt={"pictures"} className="" />
-          <div className="hero-text font-thin">Gift in Giving</div>
+          <div className="hero-text font-thinç">Gift in Giving</div>
         </div>
       </div>
     </>

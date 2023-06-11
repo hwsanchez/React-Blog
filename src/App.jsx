@@ -24,13 +24,22 @@ function App() {
       fetch("/data.json")
         .then((data) => data.json())
         .then((jsonData) => {
-          console.log(jsonData);
           setBlogsArray(jsonData);
+          console.log("This is jsonData:");
+          console.log(typeof jsonData);
+          console.log(jsonData);
+
           setShouldFetchData(false);
           // Empty dependency array -> it will only run on the initial render of the component
         });
+      // added an extra .then() method since state updates are asynchronous in React
     }
   }, []);
+
+  useEffect(() => {
+    console.log('Updated blogsArray:');
+    console.log(blogsArray);
+  }, [blogsArray])
 
   return (
     <>
