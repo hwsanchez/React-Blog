@@ -14,7 +14,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <div style={maincontainerstyle}>
+      <div className="mr-10 ml-10 mt-10 mb-10">
         <div className="block sm:flex up-container">
           <div  className="mx-auto sm:mx-0 max-w-md">
             <img  src={AboutImage} alt="Debbie" className="w-full h-auto ml-auto mr-auto" />

@@ -9,6 +9,8 @@ import "./App.css";
 
 // Effect declaration:
 import { useEffect, useState } from "react";
+import SubscribeForm from "./components/SubscribeForm";
+import PostDetail from "./components/PostDetail";
 
 function App() {
   // Boolean State to flag a fetch or not
@@ -17,29 +19,25 @@ function App() {
   // array for fetched blogs
   const [blogsArray, setBlogsArray] = useState([]);
 
-  // Calling the Effect to fetch all blogs:
-  useEffect(() => {
-    console.log("Fetching data...");
-    if (shouldFetchData) {
-      fetch("/data.json")
-        .then((data) => data.json())
-        .then((jsonData) => {
-          setBlogsArray(jsonData);
-          console.log("This is jsonData:");
-          console.log(typeof jsonData);
-          console.log(jsonData);
+  // New simplified fetch section:
 
-          setShouldFetchData(false);
-          // Empty dependency array -> it will only run on the initial render of the component
-        });
-      // added an extra .then() method since state updates are asynchronous in React
+  const fetchData = async () => {
+    if (shouldFetchData) {
+      const response = await fetch("/data.json");
+      const jsonData = await response.json();
+      setBlogsArray(jsonData);
+      setShouldFetchData(false);
     }
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   useEffect(() => {
     console.log('Updated blogsArray:');
     console.log(blogsArray);
-  }, [blogsArray])
+  }, [blogsArray]);
 
   return (
     <>
@@ -58,13 +56,34 @@ function App() {
       </Route>
 
       <Route path="/blog">
-        <BlogPage />
+        <BlogPage blogs={blogsArray} />
       </Route>
+
+      <Route path="/blog/:id">
+        {(params) => (
+          <PostDetail
+            id={params.id}
+            title={blogsArray[params.id].blogTitle}
+            category={blogsArray[params.id].category}
+            author={blogsArray[params.id].author}
+            date={blogsArray[params.id].date}
+            location={blogsArray[params.id].location}
+            images={blogsArray[params.id].images}
+            content={blogsArray[params.id].content}
+          />
+        )}
+      </Route>
+
+      {/* // render-prop style
+<Route path="/users/:id">
+  {params => <UserPage id={params.id} />}
+</Route> */}
 
       <Route path="/contact">
         <ContactPage />
       </Route>
 
+      <SubscribeForm />
       <FooterSection />
     </>
   );

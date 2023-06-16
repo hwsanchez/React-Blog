@@ -1,17 +1,18 @@
 import { Link } from "wouter";
+import SubscribeButton from "./SubscribeButton";
 
 const NavigationMenu = () => {
   return (
     <>
       <header>
-        <div className="header-inner block sm:flex items-center justify-between flex-wrap bg-zinc-100 p-6">
+        <div className="header-inner block sm:flex items-center justify-between flex-wrap bg-gray-200 p-6">
           {/* Logo */}
           <Link href="/home">
             <a
               href=""
-              className="font-thin text-xl tracking-wider hover:text-stone-400"
+              className=" font-thin text-xl tracking-wider hover:text-stone-400"
             >
-              Gift'n Giving
+              Ging House
             </a>
           </Link>
 
@@ -50,16 +51,7 @@ const NavigationMenu = () => {
             </ul>
           </nav>
           {/* Navbar right */}
-          <div>
-            <Link href="/contact">
-              <a
-                href="#"
-                className="inline-block text-sm px-4 py-2 leading-none border rounded text-stone-600 border-stone-400 hover:border-transparent hover:bg-stone-600 hover:text-white mt-4 sm:mt-0 duration-500 delay-100"
-              >
-                subscribe
-              </a>
-            </Link>
-          </div>
+          <SubscribeButton title="subscribe" />
         </div>
       </header>
     </>

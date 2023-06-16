@@ -1,24 +1,139 @@
 [
   {
-  "id": 1,
-  "blogTitle": "Beauty in Simplicity",
-  "category": "Lifestyle",
-  "author": "Debbie Sanchez",
-  "date": "07/30/2022",
-  "location": "Hamburg",
-  "image1": "./images/blog/beauty_in_simplicity/bis1.jpeg",
-  "image2": "./images/blog/beauty_in_simplicity/bis2.jpeg",
-  "image3": "./images/blog/beauty_in_simplicity/bis3.jpeg"
-},
-{
-  "id": 2,
-  "blogTitle": "Perfect Work Station for your Teen",
-  "category": "Home Decor",
-  "author": "Debbie Sanchez",
-  "date": "10/17/2022",
-  "location": "Hamburg",
-  "image1": "./images/blog/star_wars_room/swr1.jpeg",
-  "image2": "./images/blog/star_wars_room/swr2.jpeg",
-  "image3": "./images/blog/star_wars_room/swr3.jpeg"
-}
+    "id": 1,
+    "blogTitle": "Beauty in Simplicity",
+    "category": "Lifestyle",
+    "author": "Debbie Sanchez",
+    "date": "Jul 30, 2022",
+    "location": "Hamburg",
+    "images": [
+      "../src/assets/images/blog/beauty_in_simplicity/bis1.jpeg",
+      "../src/assets/images/blog/beauty_in_simplicity/bis2.jpeg",
+      "../src/assets/images/blog/beauty_in_simplicity/bis3.jpeg"
+    ],
+    "content": "A house next to a forest. A neighbourhood surrounded of a vast amount of trees. Over the last couple weeks the snow has melted, giving way to Spring. I've been impatient for this time. Everything has come to life again ready to begin new. In my forest walks I tune into my senses and practice simply being. When you are out in nature you are forced to encounter yourself . I spent a lot of time observing, wondrous, praying, waiting.. And I've come to the conclusion that to live a simple fulfilling existence, you must embrace your own unique path. Power to cultivate happiness and joy. The answer to a simple life is up to you. We have the power to cultivate happiness and joy. And this, is the reason why I chose to name this post 'Beauty in Simplicity'. In styles like Modern or Minimalist the concept involves getting things down to their most basic form. It can be seen from art and lifestyle to architecture and design. This style use bare essentials create clean and uncluttered spaces, finding the Beauty in Simplicity. More interested about Modernism read <here> or You can read more about Minimalism <here>. Another way designing a space with this Modern or Minimalis style is using a monochromatic pallete with colour used as an accent, mixing open spaces, a, lot of light and functional furniture. Nevertheless when you liven a tight budget or in a 800 square-foot apartment the Beauty in Simplicity certainly speak out just about adding a small fraction of ingredients that goes into the atmosphere and heart of a home."
+  },
+  {
+    "id": 2,
+    "blogTitle": "Perfect Work Station for your Teen",
+    "category": "Home Decor",
+    "author": "Debbie Sanchez",
+    "date": "Oct 17, 2022",
+    "location": "Hamburg",
+    "images": [
+      "../src/assets/images/blog/star_wars_room/star_wars_room_2.jpeg",
+      "../src/assets/images/blog/star_wars_room/swr2.jpeg",
+      "../src/assets/images/blog/star_wars_room/swr3.jpeg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+  {
+    "id": 3,
+    "blogTitle": "Beer-Can BBQ Chicken Recipe",
+    "category": "Food & Drinks",
+    "author": "Hugo W. Sanchez",
+    "date": "May 2, 2021",
+    "location": "Miami",
+    "images": [
+      "../src/assets/images/blog/beer_can_chicken/fire.jpeg",
+      "../src/assets/images/blog/beer_can_chicken/can_chicken.jpeg",
+      "../src/assets/images/blog/beer_can_chicken/terraze.jpg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+  {
+    "id": 4,
+    "blogTitle": "Nice Beaches in Athens",
+    "category": "Travel",
+    "author": "Alex Mantagkiozis",
+    "date": "Aug 10, 2021",
+    "location": "Athens",
+    "images": [
+      "../src/assets/images/blog/beaches_athens/athens-beach4.jpg",
+      "../src/assets/images/blog/beaches_athens/athens-beach1.jpg",
+      "../src/assets/images/blog/beaches_athens/athens-beach2.jpg",
+      "../src/assets/images/blog/beaches_athens/athens-beach3.jpg"
+    ],
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste alias nam cumque molestias eligendi itaque esse et ad ratione perspiciatis quia at, doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste alias nam cumque molestias eligendi itaque esse et ad ratione perspiciatis quia at, doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste alias nam cumque molestias eligendi itaque esse et ad ratione perspiciatis quia at, doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste alias nam cumque molestias eligendi itaque esse et ad ratione perspiciatis quia at, doloribus reiciendis, suscipit blanditiis tempore."
+  },
+  {
+    "id": 5,
+    "blogTitle": "Swiss Fondue Recipe",
+    "category": "Food & Drinks",
+    "author": "Pauline Sanchez",
+    "date": "Dec 14, 2021",
+    "location": "Zurich",
+    "images": [
+      "../src/assets/images/blog/swiss_fondue/sf3.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf2.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf1.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf4.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf5.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf6.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf7.jpeg",
+      "../src/assets/images/blog/swiss_fondue/sf8.jpeg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+  {
+    "id": 6,
+    "blogTitle": "NY Cheese Cake Recipe",
+    "category": "Food & Drinks",
+    "author": "Nicole Sanchez",
+    "date": "June 25, 2021",
+    "location": "New York",
+    "images": [
+      "../src/assets/images/blog/Cheese_cake/chees-cake1.jpeg",
+      "../src/assets/images/blog/Cheese_cake/cheese-cake2.jpeg",
+      "../src/assets/images/blog/Cheese_cake/close-up.jpeg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+  {
+    "id": 7,
+    "blogTitle": "Best BBQ Ribs in Nashville",
+    "category": "Food & Drinks",
+    "author": "Hugo Sanchez",
+    "date": "June 25, 2021",
+    "location": "Nashville",
+    "images": [
+      "../src/assets/images/blog/nashville_ribs/IMG_6922.JPG",
+      "../src/assets/images/blog/nashville_ribs/IMG_6903.JPG",
+      "../src/assets/images/blog/nashville_ribs/IMG_6923.JPG"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+
+  {
+    "id": 8,
+    "blogTitle": "A House in the Forrest",
+    "category": "Home Decor",
+    "author": "Debbie Sanchez",
+    "date": "Feb 14, 2023",
+    "location": "Hamburg",
+    "images": [
+      "../src/assets/images/blog/house_in_the_forrest/hif2.jpeg",
+      "../src/assets/images/blog/house_in_the_forrest/hif1.jpeg",
+      "../src/assets/images/blog/house_in_the_forrest/hif3.jpeg",
+      "../src/assets/images/blog/house_in_the_forrest/hif4.jpeg",
+      "../src/assets/images/blog/house_in_the_forrest/hif5.jpeg",
+      "../src/assets/images/blog/house_in_the_forrest/hif6.jpeg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  },
+  {
+    "id": 9,
+    "blogTitle": "Bach for Christmas",
+    "category": "Lifestyle",
+    "author": "Hugo Sanchez",
+    "date": "Dec 20, 2022",
+    "location": "Hamburg",
+    "images": [
+      "../src/assets/images/blog/weihnachts_konzert/wh4.jpeg",
+      "../src/assets/images/blog/weihnachts_konzert/wh1.jpg",
+      "../src/assets/images/blog/weihnachts_konzert/wh3.jpeg",
+      "../src/assets/images/blog/weihnachts_konzert/wh2.jpeg"
+    ],
+    "content": "When you are thinking in a work area for your Teens you want he or she to go to this place to feel inspired and get some work done! For me the first thing that I need to have clear is what it is the whole purpose of the area. So it comes to me questions like, would this place be just for study?, Does he or she needs to have other possibilities open?, for instant a station for painting , some comfortable corner for reading. Answering all this questions leaded me to know exactly what I need to achieved to. Furniture The key to find good solutions that works for you and your space is to think flexible. Things you take in consideration are: furniture; it is very important to keep in mind that furniture needs to be functional and practical and of course that fits into an affordable budget. First, a good surface/size to work. I had a very nice kitchen wood table that it used to be in the kitchen before. This beautiful strong wood table was standing in our garage (click in my post; How to transform your kitchen eating area into a sweet family spot). Just one little thing; because the table was stick to the wall, it had just 2 legs. Upps!, I need it to come up with a solucion to replace the missing legs. Guess what?, of course.. a malm drawer. from IKEA. And that was it! there were my perfect and very nice looking desk for my son's study Area. The second thing to consider will be storage; since I was under a tide budget I decided to create many DIY's. DIY can not just be cheap but super fun to do. I made a Cork board Station for my son to write important notes, put sticky paper, organise his calendar. It was functional and helped me to dress my empty wall. Another important fact to take in consideration is storage. Using a good office storage will avoid clutter and messy areas. The key is to keep all the paperwork and documents to be easily access in order to work efficiently as posible. When you think about books, papers, tools, etc. the answer for efficiency for instant can be shelf unit; Ikea Billybook case, it's one of the most common or Kallax Unit that comes in different flexibles sizes ( Kallax - Shelf unit) and they are very versatile. Once you have a very nice furniture, here is when Baskets, boxes, and containers play very important roll in the organisation for small things wooden nesting countertop baskets are perfect, comes with a variety of sizes orNagawood wooden nesting countertop baskets, small and large storage are a very convenient option. Inside drawer smaller boxes or containers very suitable for organising all light weight but looks messy items in your desk like markers, small tapes, acrylic paint; Secura kitchen drawer utensil organizer box Set 5 Pack, made out of bamboo these stackable wood trays save space... I totally love that!"
+  }
 ]

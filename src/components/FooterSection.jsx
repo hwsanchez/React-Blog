@@ -3,7 +3,7 @@ import { Link } from "wouter";
 const FooterSection = () => {
   return (
     <>
-      <footer className="h-28 flex justify-between bg-zinc-100 items-center">
+      <footer className="h-28 flex justify-between bg-white items-center  bg-gray-200">
         <div className="footer-left ml-8  hover:text-zinc-400">
           <a href="mailto: ging@me.com">
             <i className="mr-6 fa-regular fa-envelope hover:text-black hover:scale-125 duration-150"></i>
