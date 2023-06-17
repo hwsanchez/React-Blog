@@ -3,11 +3,6 @@ import AboutImage from "../assets/images/sanchez_final-95.jpg";
 const AboutPage = () => {
   
 
-  const maincontainerstyle = {
-    margin: "5% 5%"
-    // minHeight: "500px"
-  };
-
   const lineColor = {
     height: "0.1rem"
   }

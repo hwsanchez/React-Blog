@@ -60,18 +60,18 @@ function App() {
       </Route>
 
       <Route path="/blog/:id">
-        {(params) => (
-          <PostDetail
+        {(params) => {
+          return blogsArray && <PostDetail
             id={params.id}
-            title={blogsArray[params.id].blogTitle}
-            category={blogsArray[params.id].category}
-            author={blogsArray[params.id].author}
-            date={blogsArray[params.id].date}
-            location={blogsArray[params.id].location}
-            images={blogsArray[params.id].images}
-            content={blogsArray[params.id].content}
+            title={blogsArray?.[params.id]?.blogTitle}
+            category={blogsArray?.[params.id]?.category}
+            author={blogsArray?.[params.id]?.author}
+            date={blogsArray?.[params.id]?.date}
+            location={blogsArray?.[params.id]?.location}
+            images={blogsArray?.[params.id]?.images}
+            content={blogsArray?.[params.id]?.content}
           />
-        )}
+        }}
       </Route>
 
       {/* // render-prop style

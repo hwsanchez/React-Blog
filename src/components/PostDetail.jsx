@@ -1,5 +1,6 @@
-import Map from "react-map-gl";
-import { Link } from 'wouter';
+import Map, { Marker } from "react-map-gl";
+import { Link } from "wouter";
+import { useEffect, useState } from "react";
 
 const PostDetail = ({
   id,
@@ -11,6 +12,32 @@ const PostDetail = ({
   images,
   content,
 }) => {
+  const [longitude, setLongitude] = useState();
+  const [latitude, setLatitude] = useState();
+  const [shouldFetchCoordinates, setShouldFetchCoordinates] = useState(true);
+  const fetchCoordinates = async () => {
+    if (shouldFetchCoordinates) {
+      const response = await fetch(
+        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${1}&appid=${
+          import.meta.env.VITE_OPENWEATHER_TOKEN
+        }`
+      );
+      const jsonData = await response.json();
+      setLatitude(jsonData[0].lat);
+      setLongitude(jsonData[0].lon);
+      setShouldFetchCoordinates(false);
+    }
+  };
+
+  useEffect(() => {
+    location && fetchCoordinates();
+  }, [location]);
+
+  useEffect(() => {
+    console.log(longitude);
+    console.log(latitude);
+  }, [latitude, longitude]);
+
   return (
     <>
       <div className="mx-10 mt-20 mb-10">
@@ -36,7 +63,7 @@ const PostDetail = ({
           <div className="mt-10">
             <p className="pt-5 tracking-wider text-zinc-800">
               <img
-                src={images[1]}
+                src={images?.[1]}
                 alt="desk"
                 className="float-left max-w-md pr-8 pb-4"
               />
@@ -77,16 +104,25 @@ const PostDetail = ({
               tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repudiandae unde nisi iste alias nam cumque molestias eligendi
               itaque esse et ad ratione perspiciatis quia at, doloribus
+              reiciendis, suscipit blanditiis tempore. suscipit blanditiis
+              tempore. Repudiandae unde nisi iste alias nam cumque molestias
+              eligendi itaque esse et ad ratione perspiciatis quia at, doloribus
+              reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit. Repudiandae unde nisi iste
+              alias nam cumque molestias eligendi itaque esse et ad ratione
+              perspiciatis quia at, doloribus reiciendis, suscipit blanditiis
+              tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae unde nisi iste alias nam cumque molestias eligendi
+              itaque esse et ad ratione perspiciatis quia at, doloribus
               reiciendis, suscipit blanditiis tempore.
             </p>
           </div>
         </div>
 
         <div className="mb-16 mt-14">
-          {/* Mapbox Test! */}
           <p className="pt-5 tracking-wider text-zinc-800">
             <img
-              src={images[2]}
+              src={images?.[2]}
               alt="desk"
               className="float-right max-w-md pl-5 pb-4"
             />
@@ -117,26 +153,70 @@ const PostDetail = ({
             ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde
             nisi iste alias nam cumque molestias eligendi itaque esse et ad
             ratione perspiciatis quia at, doloribus reiciendis, suscipit
-            blanditiis tempore.
+            blanditiis tempore. Repudiandae unde nisi iste alias nam cumque
+            molestias eligendi itaque esse et ad ratione perspiciatis quia at,
+            doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste
+            alias nam cumque molestias eligendi itaque esse et ad ratione
+            perspiciatis quia at, doloribus reiciendis, suscipit blanditiis
+            tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repudiandae unde nisi iste alias nam cumque molestias eligendi
+            itaque esse et ad ratione perspiciatis quia at, doloribus
+            reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Repudiandae unde nisi iste alias nam
+            cumque molestias eligendi itaque esse et ad ratione perspiciatis
+            quia at, doloribus reiciendis, suscipit blanditiis tempore. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde
+            nisi iste alias nam cumque molestias eligendi itaque esse et ad
+            ratione perspiciatis quia at, doloribus reiciendis, suscipit
+            blanditiis tempore. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Repudiandae unde nisi iste alias nam cumque
+            molestias eligendi itaque esse et ad ratione perspiciatis quia at,
+            doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste
+            alias nam cumque molestias eligendi itaque esse et ad ratione
+            perspiciatis quia at, doloribus reiciendis, suscipit blanditiis
+            tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repudiandae unde nisi iste alias nam cumque molestias eligendi
+            itaque esse et ad ratione perspiciatis quia at, doloribus
+            reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Repudiandae unde nisi iste alias nam
+            cumque molestias eligendi itaque esse et ad ratione perspiciatis
+            quia at, doloribus reiciendis, suscipit blanditiis tempore. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde
+            nisi iste alias nam cumque molestias eligendi itaque esse et ad
+            ratione perspiciatis quia at, doloribus reiciendis, suscipit
+            blanditiis tempore. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Repudiandae unde nisi iste alias nam cumque
+            molestias eligendi itaque esse et ad ratione perspiciatis quia at,
+            doloribus reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Repudiandae unde nisi iste
+            alias nam cumque molestias eligendi itaque esse et ad ratione
+            perspiciatis quia at, doloribus reiciendis, suscipit blanditiis
+            tempore. Repudiandae unde nisi iste alias nam cumque molestias
+            eligendi itaque esse et ad ratione perspiciatis quia at, doloribus
+            reiciendis, suscipit blanditiis tempore. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
           </p>
         </div>
       </div>
-      <dir className="flex ju bg-red-700">
-        {/* #map { position: absolute; top: 0; bottom: 0; width: 100%; } */}
+      <dir className="flex justify-center w-full pb-10">
         <Map
           initialViewState={{
-            longitude: -122.4,
-            latitude: 37.8,
-            zoom: 14,
+            latitude: latitude,
+            longitude: longitude,
+            zoom: 4,
           }}
-          style={{ width: 900, height: 400 }}
-          mapStyle="mapbox://styles/mapbox/navigation-night-v1"
+          style={{ width: 600, height: 300 }}
+          mapStyle="mapbox://styles/mapbox/light-v11"
           mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
-
-        />
+        >
+          <Marker longitude={-122.4} latitude={37.8} color="red" />
+        </Map>
       </dir>
     </>
   );
 };
 
+// render(<Root />, document.body.appendChild(document.createElement('div')));
 export default PostDetail;
