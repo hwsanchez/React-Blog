@@ -26,7 +26,7 @@ const BlogPage = ({ blogs }) => {
               <PostCard
                 key={index}
                 image={blog.images[0]}
-                title={blog.blogTitle}
+                title={blog.title}
                 date={blog.date}
               />
             </a>
@@ -35,18 +35,6 @@ const BlogPage = ({ blogs }) => {
         <br />
         <br />
       </div>
-
-      {/* Mapbox Test! */}
-      {/* <Map
-        initialViewState={{
-          longitude: -122.4,
-          latitude: 37.8,
-          zoom: 14,
-        }}
-        style={{ width: 600, height: 400 }}
-        mapStyle="mapbox://styles/mapbox/streets-v9"
-        mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
-      /> */}
     </>
   );
 };

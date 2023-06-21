@@ -1,6 +1,7 @@
 import Map, { Marker } from "react-map-gl";
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
+import ScrollToTop from "./ScrollToTop";
 
 const PostDetail = ({
   id,
@@ -9,37 +10,33 @@ const PostDetail = ({
   author,
   date,
   location,
+  lat,
+  lon,
   images,
   content,
 }) => {
+ 
+
   const [longitude, setLongitude] = useState();
   const [latitude, setLatitude] = useState();
-  const [shouldFetchCoordinates, setShouldFetchCoordinates] = useState(true);
-  const fetchCoordinates = async () => {
-    if (shouldFetchCoordinates) {
-      const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${1}&appid=${
-          import.meta.env.VITE_OPENWEATHER_TOKEN
-        }`
-      );
-      const jsonData = await response.json();
-      setLatitude(jsonData[0].lat);
-      setLongitude(jsonData[0].lon);
-      setShouldFetchCoordinates(false);
-    }
-  };
 
   useEffect(() => {
-    location && fetchCoordinates();
-  }, [location]);
+    lat && setLatitude(lat);
+  }, [lat]);
 
   useEffect(() => {
+    lon && setLongitude(lon)
+  }, [lon])
+
+  useEffect(() => {
+    console.log('Updated Latitude and Longitude from PostDetail:')
     console.log(longitude);
     console.log(latitude);
   }, [latitude, longitude]);
 
   return (
     <>
+      <ScrollToTop />
       <div className="mx-10 mt-20 mb-10">
         <Link href="/blog">
           <a
@@ -200,23 +197,24 @@ const PostDetail = ({
           </p>
         </div>
       </div>
-      <dir className="flex justify-center w-full pb-10">
-        <Map
-          initialViewState={{
-            latitude: latitude,
-            longitude: longitude,
-            zoom: 4,
-          }}
-          style={{ width: 600, height: 300 }}
-          mapStyle="mapbox://styles/mapbox/light-v11"
-          mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
-        >
-          <Marker longitude={-122.4} latitude={37.8} color="red" />
-        </Map>
-      </dir>
+      {latitude && longitude && (
+        <dir className="flex justify-center w-full pb-10">
+          <Map
+            initialViewState={{
+              latitude: latitude,
+              longitude: longitude,
+              zoom: 12,
+            }}
+            style={{ width: 600, height: 300 }}
+            mapStyle="mapbox://styles/mapbox/light-v11"
+            mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
+          >
+            <Marker longitude={lon} latitude={lat} color="red" />
+          </Map>
+        </dir>
+      )}
     </>
   );
 };
 
-// render(<Root />, document.body.appendChild(document.createElement('div')));
 export default PostDetail;

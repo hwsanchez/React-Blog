@@ -32,15 +32,9 @@ const FooterSection = () => {
               </Link>
             </li>
             <li className="mr-2">|</li>
-            <li className="mr-2 hover:text-zinc-300 duration-200 delay-75">
+            <li className="mr-8 hover:text-zinc-300 duration-200 delay-75">
               <Link href="/blog">
                 <a href="">BLOG</a>
-              </Link>
-            </li>
-            <li className="mr-2">|</li>
-            <li className="mr-8 hover:text-zinc-300 duration-200 delay-75">
-              <Link href="/contact">
-                <a>CONTACT</a>
               </Link>
             </li>
           </ul>

@@ -1,18 +1,22 @@
 import AboutImage from "../assets/images/sanchez_final-95.jpg";
+import ScrollToTop from "./ScrollToTop";
 
-const AboutPage = () => {
-  
-
+const AboutPage = ( {nerraPic }) => {
   const lineColor = {
-    height: "0.1rem"
-  }
+    height: "0.1rem",
+  };
 
   return (
     <>
+      <ScrollToTop />
       <div className="mr-10 ml-10 mt-10 mb-10">
         <div className="block sm:flex up-container">
-          <div  className="mx-auto sm:mx-0 max-w-md">
-            <img  src={AboutImage} alt="Debbie" className="w-full h-auto ml-auto mr-auto" />
+          <div className="mx-auto sm:mx-0 max-w-md">
+            <img
+              src={ nerraPic }
+              alt="Debbie"
+              className="w-full h-auto ml-auto mr-auto"
+            />
           </div>
           <div className="block pl-8 right-container">
             <div className="big-text-container pt-5 pb-5 font-serif text-neutral-400 text-3xl tracking-wider font-thin">
@@ -40,9 +44,6 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        {/* <div style={redColor}>
-          
-        </div> */}
       </div>
     </>
   );
