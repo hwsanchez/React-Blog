@@ -2,29 +2,47 @@ import { supabase } from "../supabaseClient";
 import SignUpButton from "./SignUpButton";
 import { useState } from "react";
 
+
 const SubscribeForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const nameIsValid = () => {
+    const nameREGEX = /^[a-z ,.'-]{2,}$/i;
+    const nameResult = nameREGEX.test(firstName)
+    const lastNameResult = nameREGEX.test(lastName)
+    return nameResult && lastNameResult
+  };
+
+  const emailIsValid = () => {
+    const emailREGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    const emailResult = emailREGEX.test(email);
+    return emailResult
+  };
   const addSubscriber = async () => {
-    try {
-      const { data, error } = await supabase
-        .from("subscribers")
-        .insert({
-          name: firstName,
-          lastname: lastName,
-          email: email,
-        })
-        .single();
-      if (error) throw error;
-      alert("Thank you for subscribing to Ging House!");
+    if (nameIsValid() && emailIsValid()) {
+      try {
+        const { data, error } = await supabase
+          .from("subscribers")
+          .insert({
+            name: firstName,
+            lastname: lastName,
+            email: email,
+          })
+          .single();
+        if (error) throw error;
+        alert("Thank you for subscribing to Ging House!");
+      
+        // window.location.reload();
+      } catch (error) {
+        alert(error.message);
+      }
+    } else {
+      alert("Invalid Name/Lastname or e-mail!")
+    }
       setFirstName("");
       setLastName("");
       setEmail("");
-      // window.location.reload();
-    } catch (error) {
-      alert(error.message);
-    }
   };
 
   return (
