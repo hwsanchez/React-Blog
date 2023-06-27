@@ -1,6 +1,6 @@
 // import Map from "react-map-gl";
 
-import PostCard from "./postCard";
+import PostCard from "./PostCard";
 import { Link } from "wouter";
 
 const BlogPage = ({ blogs }) => {
