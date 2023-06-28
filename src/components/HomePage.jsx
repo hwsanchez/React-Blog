@@ -1,5 +1,4 @@
 import "../App.css";
-import familyPics from "../assets/images/family_pics.jpeg";
 const HomePage = ({ heroPic } ) => {
   return (
     <>

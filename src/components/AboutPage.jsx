@@ -1,4 +1,3 @@
-import AboutImage from "../assets/images/sanchez_final-95.jpg";
 import ScrollToTop from "./ScrollToTop";
 
 const AboutPage = ( {nerraPic }) => {
