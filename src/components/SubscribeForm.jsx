@@ -32,8 +32,7 @@ const SubscribeForm = () => {
           .single();
         if (error) throw error;
         alert("Thank you for subscribing to Ging House!");
-      
-        // window.location.reload();
+ 
       } catch (error) {
         alert(error.message);
       }
@@ -47,17 +46,17 @@ const SubscribeForm = () => {
 
   return (
     <>
-      <div className=" mx-20 mb-10 mt-10 drop-shadow-lg bg-zinc-400">
+      <div className=" mx-5 mb-10 mt-10 drop-shadow-lg bg-zinc-400">
         <h2 className="pt-6 tracking-wider text-center font-serif text-4xl font-thin text-white ">
           Subscribe
         </h2>
-        <p className="text-center tracking-wider mb-10 text-zinc-400">
-          Sign up to receive news and updates.{" "}
+        <p className="text-center text-sm font-thin pt-8 tracking-widest mb-10 text-white">
+          Sign up with your email address <br />to receive news and updates.
         </p>
         <form className="text-center md:flex md:justify-center mx-5">
-          <div className="sm:flex gap-5 md:px-5">
+          <div className="sm:flex gap-5 md:px-5 justify-center">
             <input
-              className="md:w-auto w-72 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="md:w-auto w-60 h-14 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
               type="text"
               placeholder="First Name"
@@ -65,7 +64,7 @@ const SubscribeForm = () => {
               onChange={(e) => setFirstName(e.target.value)}
             />
             <input
-              className="md:w-auto w-72 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="md:w-auto w-60 h-14 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="lastname"
               type="text"
               placeholder="Last Name"
@@ -75,7 +74,7 @@ const SubscribeForm = () => {
           </div>
           <div className="sm:flex justify-center">
             <input
-              className="md:w-auto w-72 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="md:w-auto w-60 h-14 mb-4 shadow appearance-none border w-full py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
               type="text"
               placeholder="Email Address"

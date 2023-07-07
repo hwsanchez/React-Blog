@@ -1,23 +1,24 @@
 .home-main-wrapper {
   height: 100%;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/assets/images/family_pics.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
   /* Set a specific height */
-  height: 900px;
-  object-position: 50% 50%;
+  /* height: 900px; */
+  height: 50%;
+  /* object-position: 50% 50%; */
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Place text in the middle of the image */
@@ -28,7 +29,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-weight: 10;
-  font-size: 50px;
-  letter-spacing: 0.07em;
 }

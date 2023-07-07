@@ -15,7 +15,7 @@ const BlogPage = ({ blogs }) => {
         <i>my latest posts:</i>
       </h2>
 
-      <div className="md:flex m-auto md:grid md:grid-cols-2 md:justify-items-center">
+      <div className="block md:flex md:grid md:grid-cols-2 md:justify-items-center">
         {blogs.map((blog, index) => (
           <Link
             href={ "/blog/" + index }

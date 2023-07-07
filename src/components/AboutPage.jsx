@@ -9,7 +9,7 @@ const AboutPage = ( {nerraPic }) => {
     <>
       <ScrollToTop />
       <div className="mr-10 ml-10 mt-10 mb-10">
-        <div className="block sm:flex up-container">
+        <div className="block sm:flex">
           <div className="mx-auto sm:mx-0 max-w-md">
             <img
               src={ nerraPic }
