@@ -28,6 +28,12 @@ const PostDetail = ({
     lon && setLongitude(lon);
   }, [lon]);
 
+  useEffect(() => {
+    console.log("Updated Latitude and Longitude from PostDetail:");
+    console.log(longitude);
+    console.log(latitude);
+  }, [latitude, longitude]);
+
   return (
     <>
       <ScrollToTop />
