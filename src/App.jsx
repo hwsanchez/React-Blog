@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 import SubscribeForm from "./components/SubscribeForm";
 import PostDetail from "./components/PostDetail";
 import SubscribePage from "./components/SubscribePage";
+import InstagramLinks from "./components/InstagramLinks";
 
 function App() {
   //Supabase posts table will load in this array with Use State Hook:
@@ -26,6 +27,9 @@ function App() {
   // Boolean State to flag a fetch or not
   const [shouldFetchData, setShouldFetchData] = useState(true);
 
+  //This array will hold all Instagram posts data:
+  const [instagramArray, setInstagramArray] = useState([]);
+
   const getPosts = async () => {
     const { data } = await supabase.from("posts").select();
     setPostsArray(data);
@@ -34,9 +38,13 @@ function App() {
   const getImages = async () => {
     const { data } = await supabase.from("gingImages").select();
     setImagesArray(data);
-    console.log("IMAGES:");
-    console.log(data);
   };
+
+  // const getInstagram = async () => {
+  //   const { data } = await supabase.from("InstagramImages").select();
+  //   setInstagramArray(data);
+  // };
+
 
   //Use Effect hook to load postArray from Supabase DB:
   useEffect(() => {
@@ -48,43 +56,29 @@ function App() {
     getImages();
   }, []);
 
-  // // array for fetched blogs
-  // const [blogsArray, setBlogsArray] = useState([]);
-
-  // New simplified fetch section:
-
-  
-
-  // const fetchData = async () => {
-  //   if (shouldFetchData) {
-  //     const response = await fetch("/data.json");
-  //     const jsonData = await response.json();
-  //     setBlogsArray(jsonData);
-  //     setShouldFetchData(false);
-  //   }
-  // };
-
+  // useEffect hook to load all Instagram posts data:
   // useEffect(() => {
-  //   fetchData();
+  //   getInstagram()
   // }, []);
 
   // useEffect(() => {
-  //   console.log("Updated blogsArray:");
-  //   console.log(blogsArray);
-  // }, [blogsArray]);
+  //   console.log("COMING FROM SUPABASE!!");
+  //   console.log(postsArray);
+  // }, [postsArray]);
 
   useEffect(() => {
-    console.log("COMING FROM SUPABASE!!");
-    console.log(postsArray);
-  }, [postsArray]);
-
-  useEffect(() => {
-    console.log("Updated webPageImagesArray:");
+    console.log("Updated imagesArray:");
     console.log(imagesArray);
   }, [imagesArray]);
 
+  // useEffect(() => {
+  //   console.log('Updated Instagram data:')
+  //   console.log(instagramArray);
+  // }, [instagramArray])
+
   return (
     <>
+      
       <NavigationMenu />
 
       <Route path="/">
@@ -93,7 +87,7 @@ function App() {
 
       <Route path="/home">
         <ScrollToTop />
-        {imagesArray && <HomePage heroPic={ imagesArray?.[0]?.images[0]} />}
+        {imagesArray && <HomePage heroPic={imagesArray?.[0]?.images[0]} />}
       </Route>
 
       <Route path="/about">
@@ -135,6 +129,10 @@ function App() {
       <Route path="/subscribers">
         <Subscribers />
       </Route>
+
+      {imagesArray && <InstagramLinks postArray={imagesArray} />} 
+
+      {/* {imagesArray && <InstagramLinks instagramImages={imagesArray?.[1]?.images} />} */}
 
       <SubscribeForm />
       <FooterSection />
